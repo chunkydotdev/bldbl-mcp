@@ -1,0 +1,57 @@
+{
+  "name": "@bldbl/mcp",
+  "version": "1.0.7",
+  "description": "Official MCP client for Buildable - AI-powered development platform that makes any project buildable",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "bldbl": "dist/cli.js"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node test-local.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "buildable",
+    "bldbl",
+    "buildplanner",
+    "mcp",
+    "ai",
+    "project-management",
+    "cursor",
+    "claude",
+    "development",
+    "automation",
+    "typescript",
+    "ai-development",
+    "project-builder"
+  ],
+  "author": "Buildable Team",
+  "license": "MIT",
+  "homepage": "https://bldbl.dev",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "axios": "^1.6.0",
+    "uuid": "^9.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@types/uuid": "^9.0.0"
+  },
+  "peerDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
+}
