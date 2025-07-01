@@ -4,6 +4,7 @@
 
 [![npm version](https://badge.fury.io/js/@bldbl%2Fmcp.svg)](https://badge.fury.io/js/@bldbl%2Fmcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![smithery badge](https://smithery.ai/badge/@buildable/bldbl-mcp)](https://smithery.ai/server/@buildable/bldbl-mcp)
 
 This package enables AI assistants (Claude, GPT, etc.) to work directly with Buildable projects using the Model Context Protocol (MCP). AI assistants can get project context, manage tasks, track progress, and communicate with human developers.
 
@@ -28,6 +29,15 @@ Buildable (bldbl.dev) is an AI-powered development platform that makes any proje
 
 ## 📦 Installation
 
+### Installing via Smithery
+
+To install @bldbl/mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@buildable/bldbl-mcp):
+
+```bash
+npx -y @smithery/cli install @buildable/bldbl-mcp --client claude
+```
+
+### Manual Installation
 ```bash
 npm install @bldbl/mcp
 ```
