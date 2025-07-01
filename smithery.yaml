@@ -1,0 +1,43 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'node',
+      args: ['dist/cli.js'],
+      env: {
+        BUILDABLE_API_KEY: config.apiKey,
+        BUILDABLE_PROJECT_ID: config.projectId,
+        BUILDABLE_API_URL: config.apiUrl,
+        BUILDABLE_AI_ASSISTANT_ID: config.aiAssistantId
+      }
+    })
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - apiKey
+      - projectId
+    properties:
+      apiUrl:
+        type: string
+        default: https://bldbl.dev/api
+        description: Buildable API endpoint URL
+      apiKey:
+        type: string
+        description: Buildable API key (starts with bp_)
+      projectId:
+        type: string
+        description: Buildable project ID
+      aiAssistantId:
+        type: string
+        default: cursor-ide
+        description: Identifier for the AI assistant instance
+  exampleConfig:
+    apiUrl: https://bldbl.dev/api
+    apiKey: bp_example_api_key
+    projectId: example_project_id
+    aiAssistantId: cursor-ide
