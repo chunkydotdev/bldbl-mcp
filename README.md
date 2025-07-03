@@ -2,6 +2,10 @@
 
 **Official MCP client for Buildable - AI-powered development platform that makes any project buildable**
 
+<a href="https://glama.ai/mcp/servers/@chunkydotdev/bldbl-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@chunkydotdev/bldbl-mcp/badge" alt="@bldbl/mcp MCP server" />
+</a>
+
 [![npm version](https://badge.fury.io/js/@bldbl%2Fmcp.svg)](https://badge.fury.io/js/@bldbl%2Fmcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![smithery badge](https://smithery.ai/badge/@buildable/bldbl-mcp)](https://smithery.ai/server/@buildable/bldbl-mcp)
@@ -378,4 +382,4 @@ This software is proprietary and confidential. Unauthorized copying, distributio
 
 ---
 
-**Built with ❤️ by the BuildPlanner team** 
+**Built with ❤️ by the BuildPlanner team**
