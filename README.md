@@ -383,3 +383,8 @@ This software is proprietary and confidential. Unauthorized copying, distributio
 ---
 
 **Built with ❤️ by the BuildPlanner team**
+
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/chunkydotdev-bldbl-mcp).
+
